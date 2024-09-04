@@ -1,10 +1,13 @@
 import React from "react";
 import MonetizedTechBlog from "./MonetizedTechBlog";
+import ErrorBoundary from "./ErrorBoundary";
 
 function App() {
   return (
     <div className="App">
-      <MonetizedTechBlog />
+      <ErrorBoundary>
+        <MonetizedTechBlog />
+      </ErrorBoundary>
     </div>
   );
 }
